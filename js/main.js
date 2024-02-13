@@ -345,3 +345,22 @@ arrebolets.push(sp)
 arrebolets[2].classList.add("activie")
 
 // end comments page
+
+
+
+
+
+
+//tast
+
+Array.prototype.this[this.length-1] = function() {
+  if(typeof this[this.length-1] !== "number" & typeof this[this.length-1] !== "boolean"&typeof this[this.length-1] !== "null"&typeof this[this.length-1] !== "string"
+  &typeof this[this.length-1] !=="Array" &typeof this[this.length-1] !=="object"){
+    (-1)
+  }else{
+    console.log(this[this.length-1])
+  }
+};
+
+ const arr = [];
+arr.this[this.length-1](); // 3
