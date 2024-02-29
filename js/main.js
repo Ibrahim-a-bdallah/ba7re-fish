@@ -164,19 +164,19 @@ let content = document.querySelector(".menu .content")
 let categories = document.querySelector(".menu .categories")
 let categorieslink = document.querySelectorAll(".menu .categories a")
 
-let arreyimgs = ["/img/introducation1.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg", "/img/introducation5.jpg",
-  "/img/introducation1.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg", "/img/introducation5.jpg",
-  "/img/introducation1.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg", "/img/introducation5.jpg",
-  "/img/introducation1.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg", "/img/introducation5.jpg",]
+let arreyimgs = ["img/introducation1.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg", "img/introducation5.jpg",
+  "img/introducation1.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg", "img/introducation5.jpg",
+  "img/introducation1.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg", "img/introducation5.jpg",
+  "img/introducation1.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg", "img/introducation5.jpg",]
 
 //object of imges
 let imges = {
   shrimps: arreyimgs,
-  crustaceans: ["/img/introducation2.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg",],
-  sandwichs: ["/img/introducation3.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg",],
-  casserole: ["/img/introducation4.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg",],
-  rice: ["/img/introducation5.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg",],
-  paste: ["/img/introducation1.jpg", "/img/introducation2.jpg", "/img/introducation3.jpg", "/img/introducation4.jpg",]
+  crustaceans: ["img/introducation2.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg",],
+  sandwichs: ["img/introducation3.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg",],
+  casserole: ["img/introducation4.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg",],
+  rice: ["img/introducation5.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg",],
+  paste: ["img/introducation1.jpg", "img/introducation2.jpg", "img/introducation3.jpg", "img/introducation4.jpg",]
 }
 
 //start window
@@ -189,7 +189,7 @@ window.onscroll = function () {
       let co = 0;
       let imeganimation = setInterval(() => {
         let sp = document.createElement("img")
-        sp.src = `..${imges.shrimps[co]}`
+        sp.src = `${imges.shrimps[co]}`
         sp.classList.add("prodect")
         sp.style.cssText = `
       transition: .5s;
@@ -231,7 +231,7 @@ categorieslink.forEach((e) => {
       if (e.className === `${k}`) {
         imges[k].forEach((img) => {
           let sp = document.createElement("img")
-          sp.src = `..${img}`
+          sp.src = `${img}`
           sp.classList.add("prodect")
           content.appendChild(sp)
           sp.style.cssText = `
